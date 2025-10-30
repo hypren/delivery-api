@@ -1,0 +1,20 @@
+Como Executar o Projeto
+
+1.  Pré-requisitos: Certifique-se de ter o Java 21 e o Maven instalados.
+2.  Clonar o Repositório:
+    ```bash
+    git clone [https://docs.github.com/pt/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github](https://docs.github.com/pt/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github)
+    cd delivery-api
+    ```
+3.  Compilar e Rodar:
+    Você pode usar o Maven Wrapper (`mvnw`):
+    ```bash
+    ./mvnw spring-boot:run
+    ```
+    Ou inicie o projeto diretamente pela classe principal (`DeliveryApiApplication.java`) na sua IDE.
+4.  Acesso ao Console H2:
+    Com a aplicação rodando, acesse o banco de dados em memória para ver os dados iniciais:
+    [http://localhost:8080/h2-console](http://localhost:8080/h2-console)
+    * JDBC URL:** `jdbc:h2:mem:deliverydb`
+    * User: `g`
+    * Password: `123`
